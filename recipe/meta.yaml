@@ -23,15 +23,15 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - dicttoxml
-    - jsonpickle
+    - dicttoxml2
+    - jsonpickle ==1.5.2
+    - matplotlib
+    - numpy
     - pandas
     - pygments
     - pylatexenc >=2.10
-    - python >=3.6
+    - python >=3.7
     - pyyaml
-    - rdflib
-    - requests
     - sparqlwrapper
     - tabulate
 
