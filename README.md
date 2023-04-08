@@ -1,11 +1,11 @@
-About pylodstorage
-==================
+About pylodstorage-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylodstorage-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/WolfgangFahl/pyLodStorage
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylodstorage-feedstock/blob/main/LICENSE.txt)
 
 Summary: python List of Dict (Table) Storage library
 
