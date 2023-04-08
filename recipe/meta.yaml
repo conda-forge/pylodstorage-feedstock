@@ -15,15 +15,14 @@ build:
     - sqlquery=lodstorage.querymain:mainSQL
     - lodquery=lodstorage.querymain:main
   noarch: python
+  script_env: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
   host:
     - pip
-    - python >=3.6
-    - setuptools
-    - setuptools_scm
+    - python >=3.7
   run:
     - dicttoxml
     - jsonpickle
