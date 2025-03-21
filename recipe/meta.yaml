@@ -21,17 +21,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - dicttoxml
+    - dicttoxml2
     - jsonpickle
+    - matplotlib-base
+    - numpy
     - pandas
     - pygments
     - pylatexenc >=2.10
-    - python >=3.6
+    - python >=3.7
     - pyyaml
-    - rdflib
-    - requests
     - sparqlwrapper
     - tabulate
 
