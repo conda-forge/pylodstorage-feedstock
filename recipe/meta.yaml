@@ -21,7 +21,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.10
   run:
     - dicttoxml2
     - jsonpickle
@@ -30,7 +30,7 @@ requirements:
     - pandas
     - pygments
     - pylatexenc >=2.10
-    - python >=3.7
+    - python >=3.10
     - pyyaml
     - sparqlwrapper
     - tabulate
