@@ -1,6 +1,7 @@
 {% set name = "pylodstorage" %}
 {% set version = "0.4.11" %}
 
+{% set min_python = "python >=3.10" %}
 {% set PYTHON = PYTHON | default("$PYTHON") %}
 
 package:
@@ -23,7 +24,7 @@ build:
 requirements:
   host:
     - pip
-    - python >={{ python_min }}
+    - python >={{ min_python }}
     - setuptools
   run:
     - dicttoxml2
@@ -33,7 +34,7 @@ requirements:
     - pandas
     - pygments
     - pylatexenc >=2.10
-    - python >={{ python_min }}
+    - python >={{ min_python }}
     - pyyaml
     - sparqlwrapper
     - tabulate
@@ -49,7 +50,7 @@ test:
     - lodquery --help
   requires:
     - pip
-    - python >={{ python_min }}
+    - python >={{ min_python }}
 
 about:
   home: https://github.com/WolfgangFahl/pyLodStorage
