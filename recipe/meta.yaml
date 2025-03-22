@@ -48,7 +48,7 @@ test:
     - lodstorage
     - sampledata
   commands:
-    - pip install || true
+    - pip check || true
     - sparqlquery --help
     - sqlquery --help
     - lodquery --help
