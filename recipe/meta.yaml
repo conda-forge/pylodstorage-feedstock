@@ -28,14 +28,13 @@ requirements:
     - dacite
     - dataclasses-json
     - dicttoxml2
-    - jsonpickle ==1.5.2
+    - jsonpickle
     - matplotlib-base
     - numpy
     - orjson
     - pandas
     - pygments
     - pymysql
-    - pylatexenc >=2.10
     - python >={{ python_min }}
     - python-slugify
     - pyyaml
