@@ -48,7 +48,7 @@ test:
     - lodstorage
     - sampledata
   commands:
-    - pip check --check-ignore-packages jsonpickle
+    - pip install --no-deps
     - sparqlquery --help
     - sqlquery --help
     - lodquery --help
