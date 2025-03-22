@@ -1,6 +1,8 @@
 {% set name = "pylodstorage" %}
 {% set version = "0.4.11" %}
 
+{% set PYTHON = PYTHON | default("$PYTHON") %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
