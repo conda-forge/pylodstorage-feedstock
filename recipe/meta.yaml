@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylodstorage-{{ version }}.tar.gz
-  sha256: F77ABBE4AAA3DA25AF384A9A8115194262C82335D22504C6A94D9EF18FC55020
+  sha256: 224e4b7f3f8bbb2c61fb2c6985da5329c46f96889ede47377b4ce21884ea68bb
 
 build:
   entry_points:
