@@ -1,5 +1,5 @@
 {% set name = "pylodstorage" %}
-{% set version = "0.14.3" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylodstorage-{{ version }}.tar.gz
-  sha256: 224e4b7f3f8bbb2c61fb2c6985da5329c46f96889ede47377b4ce21884ea68bb
+  sha256: c865b565d590fb9be33dc14797f9ec2c931045d010a942f028ed0252ed090314
 
 build:
   entry_points:
@@ -16,7 +16,7 @@ build:
     - lodquery=lodstorage.querymain:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
