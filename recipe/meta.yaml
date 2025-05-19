@@ -28,7 +28,7 @@ requirements:
     - dacite
     - dataclasses-json
     - dicttoxml2
-    - jsonpickle >= 4.0.2
+    - jsonpickle >=4.0.2
     - matplotlib-base
     - numpy
     - orjson
