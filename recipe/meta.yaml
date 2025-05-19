@@ -16,7 +16,7 @@ build:
     - lodquery=lodstorage.querymain:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -28,7 +28,7 @@ requirements:
     - dacite
     - dataclasses-json
     - dicttoxml2
-    - jsonpickle
+    - jsonpickle >=4.0.2
     - matplotlib-base
     - numpy
     - orjson
@@ -48,7 +48,7 @@ test:
     - lodstorage
     - sampledata
   commands:
-    - pip check || true
+    - pip check
     - sparqlquery --help
     - sqlquery --help
     - lodquery --help
