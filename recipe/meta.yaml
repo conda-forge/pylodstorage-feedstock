@@ -34,6 +34,7 @@ requirements:
     - owlready2
     - orjson
     - pandas
+    - pybasemkit
     - pygments
     - pymysql
     - python >={{ python_min }}
