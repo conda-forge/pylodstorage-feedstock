@@ -1,5 +1,5 @@
 {% set name = "pylodstorage" %}
-{% set version = "0.16.4" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylodstorage-{{ version }}.tar.gz
-  sha256: 63b5444235ce3a459c5851029b96dab43f6f5ae16a7caad606f39989b483c10f
+  sha256: f1c98dcaa4529aefa8a625aac92a8b283f213cab0413c89c8b566cced615c682
 
 build:
   entry_points:
@@ -34,6 +34,7 @@ requirements:
     - owlready2
     - orjson
     - pandas
+    - pybasemkit
     - pygments
     - pymysql
     - python >={{ python_min }}
@@ -49,6 +50,8 @@ test:
     - lodstorage
     - sampledata
   commands:
+    # Remove this once dacite fixes its dependency mess
+    - pip install --upgrade dacite
     - pip check
     - sparqlquery --help
     - sqlquery --help
