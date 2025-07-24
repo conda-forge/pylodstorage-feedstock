@@ -50,6 +50,8 @@ test:
     - lodstorage
     - sampledata
   commands:
+    # Remove this once dacite fixes its dependency mess
+    - pip install --upgrade dacite
     - pip check
     - sparqlquery --help
     - sqlquery --help
