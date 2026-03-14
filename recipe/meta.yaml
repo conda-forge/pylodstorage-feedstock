@@ -1,5 +1,5 @@
 {% set name = "pylodstorage" %}
-{% set version = "0.19.1" %}
+{% set version = "0.19.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylodstorage-{{ version }}.tar.gz
-  sha256: 7fd234cf1be7228f5a17d5b4cc9da96b001e145f87bd5e222bb49479fcdd3df8
+  sha256: b36f3ee1e54d251622dc82b511b0bb30f7fe348d720c8b9f8e1cf359215313bb
 
 build:
   entry_points:
